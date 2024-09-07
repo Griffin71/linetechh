@@ -1,8 +1,10 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4c542;
+    background-color: #f4c542; /* Background color */
     margin: 0;
     padding: 0;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1.5s forwards; /* Apply fade-in animation */
 }
 
 .container {
@@ -15,16 +17,23 @@ body {
     margin: 20px auto;
 }
 
-.logo .left-brace, .logo .right-brace {
-    font-size: 4em;
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo .left-brace {
-    color: #343a40;
+    font-size: 4em;
+    color: #343a40; /* Dark color for the left brace */
 }
 
 .logo .right-brace {
-    color: #f4c542;
+    font-size: 4em;
+    color: #f4c542; /* Yellow color for the right brace */
 }
 
 nav ul {
@@ -72,6 +81,7 @@ button:hover {
     text-decoration: none;
     font-weight: bold;
 }
+
 .about-section {
     margin-top: 20px;
     line-height: 1.6;
@@ -108,4 +118,29 @@ button:hover {
 .contact-info ul {
     list-style-type: none;
     padding: 0;
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+    font-size: 1.2em;
+    color: #333;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.slogan {
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-align: center;
+    color: #343a40;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
