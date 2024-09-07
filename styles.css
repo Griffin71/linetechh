@@ -1,0 +1,111 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4c542;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.logo .left-brace, .logo .right-brace {
+    font-size: 4em;
+}
+
+.logo .left-brace {
+    color: #343a40;
+}
+
+.logo .right-brace {
+    color: #f4c542;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #343a40;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form select, form textarea {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.donate-btn {
+    display: inline-block;
+    padding: 15px;
+    background-color: #f4c542;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.about-section {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.about-section h2 {
+    color: #343a40;
+    margin-top: 20px;
+}
+
+.about-section p, .about-section ul {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.contact-info {
+    margin-top: 40px;
+}
+
+.contact-info a {
+    color: #f4c542;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}

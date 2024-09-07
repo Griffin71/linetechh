@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Tech - Enquiry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+		<nav>
+            <ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="enquiry.html">Enquire</a></li>
+                <li><a href="donation.html">Donate</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+    <div class="container">
+        <h1>Enquiry Form</h1>
+        <form action="mailto:liinetechh@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="type">I am interested in:</label>
+            <select id="type" name="type">
+                <option value="website">Website</option>
+                <option value="app">App</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
