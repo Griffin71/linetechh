@@ -3,11 +3,28 @@ const posts = [
         title: "New Website Features",
         content: "We have launched new features for building apps!",
         time: "10:00 AM, 07 Sep 2024",
-        likes: 0,
-        dislikes: 0,
+        likes: 10,
+        dislikes: 2,
         url: "#"
     },
     // More posts
+    {
+        title: "New Jobs In The Job Section",
+        content: "We have new jobs available!",
+        time: "11:31 AM, 19 Sep 2024",
+        likes: 100,
+        dislikes: 90,
+        url: "https://griffin71.github.io/linetechh/jobs.html"
+    },
+    {
+        title: "Venter Ventee!",
+        content: "We have a new new website availabe which provides users with therapy and an opportunity to listen to others. Kindly check it out(Copy and paste the link in the address bar.). T's and C's may apply. ",
+        time: "11:37 AM, 19 Sep 2024",
+        likes: 900,
+        dislikes: 133,
+        url: "https://griffin71.github.io/Venter-Ventee/"
+    },
+    
 ];
 
 const postContainer = document.getElementById('news-posts');
