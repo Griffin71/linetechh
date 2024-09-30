@@ -7,7 +7,7 @@ const posts = [
         dislikes: 2,
         url: "#"
     },
-    // More posts
+  
     {
         title: "New Jobs In The Job Section",
         content: "We have new jobs available!",
@@ -18,7 +18,7 @@ const posts = [
     },
     {
         title: "Venter Ventee!",
-        content: "We have a new new website availabe which provides users with therapy and an opportunity to listen to others. Kindly check it out(Copy and paste the link in the address bar.). T's and C's may apply. ",
+        content: "We have a new new website availabe which provides users with therapy and an opportunity to listen to others. Kindly check it out(just click share & the link will automatically be copied. . T's and C's may apply.) ",
         time: "11:37 AM, 19 Sep 2024",
         likes: 900,
         dislikes: 133,
