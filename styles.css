@@ -71,16 +71,23 @@ button:hover {
     background-color: #555;
 }
 
-.donate-btn {
+..donate-btn {
     display: inline-block;
-    padding: 15px;
-    background-color: #f4c542;
+    padding: 15px 25px;
+    background-color: #0070ba; /* PayPal blue */
     color: #fff;
-    text-align: center;
-    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
+
+.donate-btn:hover {
+    background-color: #005ea6; /* Darker PayPal blue */
+}
+
 
 .about-section {
     margin-top: 20px;
