@@ -241,3 +241,21 @@ footer {
     background-color: #f4c542; /* */
 }
 
+.donate-btn {
+    display: inline-block;
+    background-color: #0070ba;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.donate-btn:hover {
+    background-color: #005ea6;
+}
+
+.donate-btn i {
+    margin-right: 8px;
+}
