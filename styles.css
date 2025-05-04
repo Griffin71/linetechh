@@ -1,22 +1,25 @@
- body {
+/* --------------------- Base Styles --------------------- */
+body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4c542; /* Background color */
+    background-color: #f4c542; /* Theme background color */
     margin: 0;
     padding: 0;
-    opacity: 0; /* Initially hidden */
-    animation: fadeIn 1.5s forwards; /* Apply fade-in animation */
+    opacity: 0; /* Initially hidden for animation */
+    animation: fadeIn 1.5s forwards;
 }
 
+/* --------------------- Container --------------------- */
 .container {
     width: 90%;
     max-width: 800px;
-    background-color: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* --------------------- Logo --------------------- */
 .logo {
     font-size: 2em;
     font-weight: bold;
@@ -26,21 +29,23 @@
     justify-content: center;
 }
 
-.logo .left-brace {
+.logo .left-brace { /* Left brace styling, DO NOT REMOVE! */
     font-size: 4em;
-    color: #343a40; /* Dark color for the left brace */
+    color: #343a40;
 }
 
-.logo .right-brace {
+.logo .right-brace { /* Right brace styling, DO NOT REMOVE! */
     font-size: 4em;
-    color: #f4c542; /* Yellow color for the right brace */
+    color: #f4c542;
 }
 
+/* --------------------- Navigation --------------------- */
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: space-around;
+    margin: 0;
 }
 
 nav ul li a {
@@ -49,12 +54,16 @@ nav ul li a {
     color: #343a40;
 }
 
+/* --------------------- Form Elements --------------------- */
 form {
     display: flex;
     flex-direction: column;
 }
 
-form label, form input, form select, form textarea {
+form label,
+form input,
+form select,
+form textarea {
     margin-bottom: 10px;
 }
 
@@ -65,30 +74,37 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #555;
 }
 
+/* --------------------- Donation Button --------------------- */
 .donate-btn {
     display: inline-block;
-    padding: 15px 25px;
+    padding: 12px 20px;
     background-color: #0070ba; /* PayPal blue */
-    color: #FFDF00;
-    text-decoration: none;
+    color: #ffffff;
     font-weight: bold;
-    border-radius: 3px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 
 .donate-btn:hover {
-    background-color: #005ea6; /* Darker PayPal blue */
+    background-color: #005ea6;
 }
 
+.donate-btn i {
+    margin-right: 8px;
+}
 
+/* --------------------- About Section --------------------- */
 .about-section {
     margin-top: 20px;
     line-height: 1.6;
@@ -96,10 +112,12 @@ button:hover {
 
 .about-section h2 {
     color: #343a40;
+    font-size: 1.8em;
     margin-top: 20px;
 }
 
-.about-section p, .about-section ul {
+.about-section p,
+.about-section ul {
     font-size: 1.1em;
     color: #555;
 }
@@ -109,6 +127,7 @@ button:hover {
     margin-left: 20px;
 }
 
+/* --------------------- Contact Info --------------------- */
 .contact-info {
     margin-top: 40px;
 }
@@ -123,11 +142,11 @@ button:hover {
 }
 
 .contact-info ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
-/* Welcome Message Styling */
+/* --------------------- Welcome Message & Slogan --------------------- */
 .welcome-message {
     font-size: 1.2em;
     color: #333;
@@ -142,37 +161,63 @@ button:hover {
     color: #343a40;
 }
 
-/* Fade-in Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+/* --------------------- Footer --------------------- */
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f4c542;
 }
-/* iPhone 13 and Up (390px width and larger screens) */
-@media screen and (min-width: 390px) {
-    body {
-        font-family: 'Poppins', sans-serif;
-        background-color: #f4c542;
-        margin: 0;
-        padding: 0;
-        opacity: 0;
-        animation: fadeIn 1.5s forwards;
-    }
 
+/* --------------------- Support Container --------------------- */
+.support-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.paypal-link {
+    background-color: #003087;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.paypal-link:hover {
+    background-color: #0050b3;
+    text-decoration: none;
+}
+
+.paypal-link i.fa-paypal {
+    font-size: 22px;
+}
+
+/* --------------------- Animation --------------------- */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* --------------------- Responsive Media Queries --------------------- */
+
+/* iPhone 13 and Up (390px+) */
+@media screen and (min-width: 390px) {
     .container {
         width: 85%;
-        max-width: 800px;
-        background-color: white;
-        border-radius: 12px;
-        padding: 20px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         margin: 30px auto;
     }
 
-    .logo .left-brace, .logo .right-brace {
+    .logo .left-brace,
+    .logo .right-brace {
         font-size: 5em;
     }
 
@@ -181,12 +226,13 @@ button:hover {
         font-size: 1.2em;
     }
 
-    .welcome-message, .slogan {
+    .welcome-message,
+    .slogan {
         font-size: 1.3em;
     }
 }
 
-/* General Devices (Medium Screens: 768px and larger) */
+/* Medium Devices (768px+) */
 @media screen and (min-width: 768px) {
     .container {
         width: 75%;
@@ -208,7 +254,7 @@ button:hover {
     }
 }
 
-/* Large Screens (1024px and larger) */
+/* Large Devices (1024px+) */
 @media screen and (min-width: 1024px) {
     .container {
         max-width: 1000px;
@@ -219,7 +265,8 @@ button:hover {
         font-size: 2.5em;
     }
 
-    .logo .left-brace, .logo .right-brace {
+    .logo .left-brace,
+    .logo .right-brace {
         font-size: 6em;
     }
 
@@ -228,34 +275,8 @@ button:hover {
         font-size: 1.5em;
     }
 
-    .welcome-message, .slogan {
+    .welcome-message,
+    .slogan {
         font-size: 1.5em;
     }
-}
-
-footer {
-    text-align: center;
-    position: relative;
-    width: 100%;
-    padding: 10px 0;
-    background-color: #f4c542; /* */
-}
-
-.donate-btn {
-    display: inline-block;
-    background-color: #0070ba;
-    color: #ffffff;
-    padding: 12px 20px;
-    font-size: 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.donate-btn:hover {
-    background-color: #005ea6;
-}
-
-.donate-btn i {
-    margin-right: 8px;
 }
