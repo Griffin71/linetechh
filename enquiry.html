@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Line Tech - Enquiry</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Line Tech - Enquiry</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
-		<nav>
-            <ul>
-				<li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="donation.html">Donate</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="news.html">News</a></li>
-            </ul>
-        </nav>
-    <div class="container">
-        <h1>Enquiry Form</h1>
-        <!--<form action="mailto:liinetechh@gmail.com" method="post" enctype="text/plain">-->
-	 <form action="mailto:kabelosamkelo19@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Name:</label>
-		 <input type="text" id="name" name="name" autocomplete="name" required>
-
-
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" autocomplete="email" required>
-
-            <label for="type">I am interested in:</label>
-            <select id="type" name="type">
-                <option value="website">Website</option>
-                <option value="app">App</option>
-		    <option value="Recover Password to Laptop">Recover Password to Laptop</option>
-		    <option value="Recover Password to Phone">Recover Password to Phone</option>
-		    <option value="Recover Facebook Account">Recover Facebook Account</option>
-		    <option value="Recover Instagram Account">Recover Instagram Account</option>
-            </select>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
+  <div class="container">
+    <div class="logo">
+      <span class="left-brace">{</span>
+      Line Tech
+      <span class="right-brace">}</span>
     </div>
+    <div class="slogan">
+      <i class="fa fa-plug"></i> Plug into Possibility
+    </div>
+
+    <br>
+
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fa fa-users"></i> About Us</a></li>
+        <li><a href="donation.html"><i class="fa fa-heart"></i> Donate</a></li>
+        <li><a href="jobs.html"><i class="fa fa-briefcase"></i> Jobs</a></li>
+        <li><a href="news.html"><i class="fa fa-newspaper-o"></i> News</a></li>
+      </ul>
+    </nav>
+
+    <h1><i class="fa fa-envelope"></i> Enquiry Form</h1>
+
+    <form id="enquiryForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" autocomplete="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" autocomplete="email" required />
+
+      <label for="type">I am interested in:</label>
+      <select id="type" name="type">
+        <option value="Website">Website</option>
+        <option value="App">App</option>
+        <option value="Recover Password to Laptop">Recover Password to Laptop</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+      <p id="enquiryMessage"></p>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="enquiry.js"></script>
+  <footer>
+    &copy; 2025 Line Tech. All Rights Reserved.
+    <div class="footer-links" style="text-align: center; margin-top: 10px; font-size: 14px; color: #555;">
+        <a href="terms.html" style="color: #007BFF; text-decoration: none; margin: 0 5px;">Terms and Conditions</a> | 
+        <a href="privacy.html" style="color: #007BFF; text-decoration: none; margin: 0 5px;">Privacy Policy</a>
+    </div>
+</footer>
+
 </body>
+
+
 </html>
